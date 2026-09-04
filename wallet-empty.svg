@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-labelledby="title desc">
+  <title id="title">Carteira vazia</title>
+  <desc id="desc">Ilustração de uma carteira aberta sem dinheiro</desc>
+  <rect width="360" height="260" rx="24" fill="#262626"/>
+  <path d="M70 87 96 57c7-8 17-12 27-12h122c13 0 23 10 23 23v104c0 13-10 23-23 23H94c-13 0-24-11-24-24V87Z" fill="#9a9a9a"/>
+  <path d="m70 87 48 39h130c11 0 20 9 20 20v23c0 11-9 20-20 20H94c-13 0-24-11-24-24V87Z" fill="#6e6e6e"/>
+  <path d="M116 126h136c9 0 16 7 16 16v27c0 9-7 16-16 16H116" fill="none" stroke="#f2f2f2" stroke-width="5"/>
+  <circle cx="236" cy="156" r="7" fill="#00ff00"/>
+  <path d="M133 81h94" stroke="#f2f2f2" stroke-linecap="round" stroke-width="5" opacity=".7"/>
+  <path d="m163 113 35 35m0-35-35 35" stroke="#ff3b3b" stroke-linecap="round" stroke-width="7"/>
+</svg>

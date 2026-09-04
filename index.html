@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ============================================================
+       SEO — troque SEUDOMINIO.com.br pelo domínio real antes de publicar
+       ============================================================ -->
+  <title>Hackeando os Boletos: Quanto Você Perde nas Contas Todo Mês?</title>
+  <meta name="description" content="Faça o teste grátis de 30 segundos e descubra quanto dinheiro está escapando das suas contas de luz, água ou carro. Calculadora de desperdício exclusiva.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://SEUDOMINIO.com.br/">
+  <meta name="theme-color" content="#121212">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://SEUDOMINIO.com.br/">
+  <meta property="og:title" content="Hackeando os Boletos: Descubra Quanto Você Está Perdendo nas Contas">
+  <meta property="og:description" content="Teste grátis de 30 segundos: descubra as brechas tarifárias que estão te fazendo pagar mais nas contas de casa.">
+  <meta property="og:image" content="https://SEUDOMINIO.com.br/assets/og-image-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hackeando os Boletos: Descubra Quanto Você Está Perdendo nas Contas">
+  <meta name="twitter:description" content="Teste grátis de 30 segundos: descubra as brechas tarifárias que estão te fazendo pagar mais nas contas de casa.">
+  <meta name="twitter:image" content="https://SEUDOMINIO.com.br/assets/og-image-1200x630.jpg">
+
+  <!-- Dados estruturados básicos para o Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Hackeando os Boletos",
+    "description": "Calculadora interativa que mostra quanto dinheiro você perde por ano em brechas tarifárias nas contas domésticas.",
+    "inLanguage": "pt-BR",
+    "url": "https://SEUDOMINIO.com.br/"
+  }
+  </script>
+
+  <!-- Fonte principal do site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ============================================================
+       GOOGLE TAG MANAGER — SNIPPET DO <HEAD>
+       Troque "GTM-XXXXXXX" pelo ID do seu container (formato GTM-XXXXXXX).
+       Enquanto o ID não for trocado, o script falha silenciosamente
+       (não quebra a página, só não envia dados).
+       ============================================================ -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <script type="text/plain" data-consent="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  <!-- Fim do GTM (head) -->
+
+  <!-- ============================================================
+       META (FACEBOOK) PIXEL — CÓDIGO BASE
+       Troque "SEU_PIXEL_ID" pelo ID do seu Pixel.
+       Os eventos "Lead" (Passo 5) e "InitiateCheckout" (clique no CTA)
+       já são disparados automaticamente pelo script.js.
+       ============================================================ -->
+  <link rel="preconnect" href="https://connect.facebook.net">
+  <script type="text/plain" data-consent="marketing">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'SEU_PIXEL_ID');
+  fbq('track', 'PageView');
+  </script>
+  <!-- Fim do Meta Pixel -->
+</head>
+<body>
+  <a href="#quizContainer" class="skip-link">Pular para o quiz</a>
+
+  <div class="app" id="app">
+    <header class="app-header">
+      <p class="brand">Hackeando os Boletos</p>
+    </header>
+
+    <!-- H1 oculto: mantém a semântica/SEO sem interferir na estética "uma pergunta por vez" -->
+    <h1 class="visually-hidden">Hackeando os Boletos: descubra quanto você está perdendo todo mês nas suas contas</h1>
+
+    <div class="progress-panel" aria-label="Progresso do quiz">
+      <div class="progress-heading">
+        <span class="progress-label">Seu progresso</span>
+        <strong class="progress-percent" id="quizProgressPercent">0%</strong>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div class="progress-fill" id="quizProgressFill"></div>
+      </div>
+      <div class="progress-notes" aria-hidden="true">
+        <span class="progress-note">01</span>
+        <span class="progress-note">02</span>
+        <span class="progress-note">03</span>
+        <span class="progress-note">04</span>
+        <span class="progress-note">05</span>
+      </div>
+    </div>
+
+    <main class="quiz-container" id="quizContainer">
+      <noscript>
+        <div class="noscript-fallback">
+          <p>Para usar a calculadora interativa, ative o JavaScript no seu navegador.</p>
+        </div>
+      </noscript>
+    </main>
+
+    <footer class="app-footer">
+      <p>&copy; <span id="currentYear"></span> Hackeando os Boletos. Todos os direitos reservados.</p>
+      <nav class="footer-links" aria-label="Links legais">
+        <button type="button" class="legal-button" data-legal="privacy">Política de Privacidade</button>
+        <button type="button" class="legal-button" data-legal="terms">Termos de Uso</button>
+        <button type="button" class="legal-button" id="openCookieSettings">Cookies</button>
+      </nav>
+    </footer>
+  </div>
+
+  <dialog class="legal-modal" id="legalModal" aria-labelledby="legalModalTitle">
+    <div class="legal-modal-header">
+      <h2 id="legalModalTitle">Política de Privacidade</h2>
+      <button type="button" class="modal-close" id="closeLegalModal" aria-label="Fechar políticas">&times;</button>
+    </div>
+    <div class="legal-modal-content">
+      <section id="privacyContent" class="legal-content">
+        <p><strong>Última atualização:</strong> 4 de setembro de 2026</p>
+        <h3>1. Quem é o responsável</h3>
+        <p>O responsável pelo tratamento dos dados deste site é <strong>[NOME OU EMPRESA]</strong>. Para dúvidas ou solicitações sobre privacidade, escreva para <strong>[E-MAIL DE PRIVACIDADE]</strong>.</p>
+        <h3>2. Dados coletados e finalidade</h3>
+        <p>Coletamos as respostas do quiz, o valor informado, dados técnicos básicos, data e hora de acesso e parâmetros de campanha (UTM). Usamos essas informações para calcular a estimativa exibida, melhorar o serviço, medir campanhas e, quando autorizado, entrar em contato sobre a oferta.</p>
+        <h3>3. Compartilhamento e armazenamento</h3>
+        <p>Os dados podem ser enviados aos serviços de automação, planilha e checkout configurados pelo responsável, apenas para executar as finalidades informadas. Adotamos medidas razoáveis de segurança e mantemos os dados pelo tempo necessário às finalidades ou às obrigações legais.</p>
+        <h3>4. Seus direitos</h3>
+        <p>Nos termos da LGPD, você pode solicitar confirmação de tratamento, acesso, correção, anonimização, eliminação, portabilidade, informação sobre compartilhamentos e revogação do consentimento, quando aplicável. Envie a solicitação para o e-mail indicado acima.</p>
+        <h3>5. Cookies e terceiros</h3>
+        <p>Podemos usar ferramentas de análise e publicidade, como Google Tag Manager e Meta Pixel, conforme configuradas neste site. Você pode bloquear cookies nas configurações do navegador. Atualize os campos entre colchetes e a configuração de consentimento antes da publicação.</p>
+      </section>
+      <section id="termsContent" class="legal-content" hidden>
+        <p><strong>Última atualização:</strong> 4 de setembro de 2026</p>
+        <h3>1. Sobre o serviço</h3>
+        <p>Este site apresenta uma estimativa educativa de possível desperdício com base nas respostas fornecidas. O resultado não é promessa de economia, diagnóstico, consultoria financeira ou garantia de contratação.</p>
+        <h3>2. Uso correto</h3>
+        <p>Você deve informar dados verdadeiros, usar o site de forma lícita e não tentar interferir no funcionamento, nos formulários ou nos serviços conectados.</p>
+        <h3>3. Limitações</h3>
+        <p>O cálculo é aproximado e pode não refletir tarifas, contratos, impostos, consumo ou condições específicas. Decisões tomadas com base no resultado são de responsabilidade do usuário. O site pode ficar temporariamente indisponível ou ter seu conteúdo alterado.</p>
+        <h3>4. Oferta e serviços externos</h3>
+        <p>Qualquer contratação, preço, prazo e condição apresentados no checkout dependem do fornecedor responsável. Ao sair deste site, aplicam-se também os termos e a política de privacidade do serviço externo.</p>
+        <h3>5. Contato e alterações</h3>
+        <p>Para dúvidas, reclamações ou solicitações, contate <strong>[E-MAIL DE CONTATO]</strong>. Estes termos podem ser atualizados para refletir mudanças legais ou no serviço; a versão vigente será disponibilizada nesta janela.</p>
+      </section>
+    </div>
+  </dialog>
+
+  <section class="cookie-banner" id="cookieBanner" aria-labelledby="cookieBannerTitle" hidden>
+    <div class="cookie-banner-copy">
+      <h2 id="cookieBannerTitle">Sua privacidade importa</h2>
+      <p>Usamos cookies necessários para o funcionamento e, com sua permissão, cookies de análise e marketing para melhorar o site e medir campanhas.</p>
+      <button type="button" class="cookie-link" id="openCookieDetails">Configurar preferências</button>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-button cookie-button-secondary" id="rejectCookies">Recusar opcionais</button>
+      <button type="button" class="cookie-button cookie-button-primary" id="acceptCookies">Aceitar todos</button>
+    </div>
+  </section>
+
+  <dialog class="cookie-modal" id="cookieModal" aria-labelledby="cookieModalTitle">
+    <div class="legal-modal-header">
+      <h2 id="cookieModalTitle">Preferências de cookies</h2>
+      <button type="button" class="modal-close" id="closeCookieModal" aria-label="Fechar preferências de cookies">&times;</button>
+    </div>
+    <div class="cookie-modal-content">
+      <p>Escolha quais categorias você permite. Sua decisão fica salva neste navegador e pode ser alterada pelo botão “Cookies” no rodapé.</p>
+      <label class="cookie-option">
+        <span><strong>Necessários</strong><small>Essenciais para o site funcionar. Não podem ser desativados.</small></span>
+        <input type="checkbox" checked disabled>
+      </label>
+      <label class="cookie-option">
+        <span><strong>Análise</strong><small>Ajudam a entender o uso do site e melhorar a experiência.</small></span>
+        <input type="checkbox" id="analyticsCookies">
+      </label>
+      <label class="cookie-option">
+        <span><strong>Marketing</strong><small>Permitem medir campanhas e exibir comunicações mais relevantes.</small></span>
+        <input type="checkbox" id="marketingCookies">
+      </label>
+      <button type="button" class="cookie-button cookie-button-primary cookie-save" id="saveCookiePreferences">Salvar preferências</button>
+    </div>
+  </dialog>
+
+  <!-- config.js precisa carregar antes de script.js -->
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
